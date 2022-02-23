@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ej02Ainara" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="M1Z-rv-2uB">
+                                <rect key="frame" x="20" y="10" width="280" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="F64-pm-MmG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pequeña descripción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="cpu-H4-cni">
+                                <rect key="frame" x="20" y="56" width="280" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="rWd-6N-Y2s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="santorini" translatesAutoresizingMaskIntoConstraints="NO" id="wi9-CB-gDr">
+                                <rect key="frame" x="20" y="100" width="280" height="312"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vda-6k-lZZ">
+                                <rect key="frame" x="194" y="430" width="96" height="30"/>
+                                <state key="normal" title="Siguiente foto"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EX0-Dq-Yqg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZI-r1-8c4">
+                                <rect key="frame" x="30" y="430" width="25" height="30"/>
+                                <connections>
+                                    <action selector="infoAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g34-hC-n1e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vda-6k-lZZ" secondAttribute="trailing" constant="30" id="161-ff-d5J"/>
+                            <constraint firstItem="cpu-H4-cni" firstAttribute="top" secondItem="M1Z-rv-2uB" secondAttribute="bottom" constant="10" id="1D9-cI-aUL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cpu-H4-cni" secondAttribute="trailing" constant="20" id="9KV-cR-hlF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M1Z-rv-2uB" secondAttribute="trailing" constant="20" id="9RR-9E-NZv"/>
+                            <constraint firstItem="cpu-H4-cni" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MIb-bm-AsU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vda-6k-lZZ" secondAttribute="bottom" constant="20" id="TTK-MJ-4G2"/>
+                            <constraint firstItem="M1Z-rv-2uB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zc3-TI-quC"/>
+                            <constraint firstItem="M1Z-rv-2uB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="arT-A4-8AJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TZI-r1-8c4" secondAttribute="bottom" constant="20" id="c65-JE-4Xh"/>
+                            <constraint firstItem="vda-6k-lZZ" firstAttribute="centerY" secondItem="TZI-r1-8c4" secondAttribute="centerY" id="ed1-x5-iyb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wi9-CB-gDr" secondAttribute="bottom" constant="68" id="i0H-qs-E64"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wi9-CB-gDr" secondAttribute="trailing" constant="20" id="ihK-tN-gAG"/>
+                            <constraint firstItem="TZI-r1-8c4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="jYz-KZ-p0k"/>
+                            <constraint firstItem="wi9-CB-gDr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rEm-k8-8Yk"/>
+                            <constraint firstItem="wi9-CB-gDr" firstAttribute="top" secondItem="cpu-H4-cni" secondAttribute="bottom" constant="8" symbolic="YES" id="srf-kz-MeD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="cpu-H4-cni" id="kGJ-PK-VC0"/>
+                        <outlet property="imageView" destination="wi9-CB-gDr" id="C18-Ef-43b"/>
+                        <outlet property="titleLabel" destination="M1Z-rv-2uB" id="yaV-jr-dAZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="123.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="santorini" width="426.66665649414062" height="320"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
